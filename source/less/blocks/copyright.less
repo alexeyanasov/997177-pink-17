@@ -1,35 +1,38 @@
 .copyright {
-  width: 130px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .copyright__text {
+  margin-right: 15px;
+  margin-top: -9px;
+  font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  margin-top: 6px;
-  margin-right: 16px;
+  color: @main-dark-color;
 }
 
 .copyright__link {
-  fill: #d22856;
+  width: 27px;
+  height: 34px;
 
   &:hover {
-    fill: rgba(40, 54, 69, 1);
+    .copyright__img {
+      fill: @main-dark-color;
+    }
   }
 
   &:active {
-    fill: rgba(40, 54, 69, 0.3);
+    opacity: 0.3;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .copyright {
-    width: 150px;
-    justify-content: flex-end;
-  }
-
   .copyright__text {
     font-size: 18px;
+    margin-top: -7px;
+    margin-left: 1px;
+    margin-right: 14px;
   }
 }
